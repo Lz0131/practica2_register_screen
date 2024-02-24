@@ -40,6 +40,7 @@ dependencies:
   flutter_signin_button: ^2.0.0
   image_picker: ^1.0.7
   io: ^1.0.4
+  intl: ^0.19.0
   flutter_form_builder: ^9.2.1
 
 

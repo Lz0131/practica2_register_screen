@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:practica2_register_screen/screens/LoginPage.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io' as io;
-import 'package:flutter_form_builder/flutter_form_builder.dart' as fb;
+import 'package:practica2_register_screen/screens/dashboard_screen.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});
@@ -53,6 +53,9 @@ class _SignupPageState extends State<SignupPage> {
       print('Email: $_email');
       print('Password: $_password');
       print('Confirm Password: $_confirm_password');
+
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => DashboardScreen()));
     }
   }
 
