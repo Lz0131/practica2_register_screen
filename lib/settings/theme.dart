@@ -10,7 +10,7 @@ class ThemeApp {
   }
 
   static ThemeData darkTheme(BuildContext context) {
-    final theme = ThemeData.light();
+    final theme = ThemeData.dark();
     return theme.copyWith(
         colorScheme: Theme.of(context)
             .colorScheme

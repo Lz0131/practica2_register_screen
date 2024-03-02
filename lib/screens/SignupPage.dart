@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practica2_register_screen/onboarding_screen.dart';
 import 'package:practica2_register_screen/screens/LoginPage.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io' as io;
@@ -55,7 +56,7 @@ class _SignupPageState extends State<SignupPage> {
       print('Confirm Password: $_confirm_password');
 
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => DashboardScreen()));
+          context, MaterialPageRoute(builder: (context) => OnBoardingScreen()));
     }
   }
 
