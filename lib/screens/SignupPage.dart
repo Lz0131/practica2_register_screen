@@ -25,6 +25,12 @@ class _SignupPageState extends State<SignupPage> {
   String _confirm_password = '';
   String password = '';
 
+  Future<bool> signInUser({required String password, required String email}) {
+    final userCredential = await auth.signInWithEmailAndPassword(email: email, password: password
+
+    );
+  }
+
   Future selImagen(int op) async {
     var pickedFile;
     if (op == 1) {
